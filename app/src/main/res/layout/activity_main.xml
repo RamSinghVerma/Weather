@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="85dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        android:background="?attr/colorBackgroundFloating"
+         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="259dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:paddingRight="10dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:ems="10"
+        android:hint="@string/enter_city"
+        android:inputType="textPersonName"
+        android:textSize="14sp">
+
+        <requestFocus />
+    </EditText>
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="-35dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/editText"
+        android:paddingRight="10dp"
+        app:srcCompat="@drawable/ic_backspace_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/maxTemp"
+        android:layout_alignStart="@+id/imageView"
+        android:text="@string/min_temp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="154dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="154dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/minTemp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textView5" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="65dp"
+        android:layout_height="29dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/minTemp"
+        android:text="@string/max_temp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="65dp"
+        android:layout_height="29dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/maxTemp"
+        android:text="@string/pressure"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="154dp"
+        android:layout_height="29dp"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_below="@+id/maxTemp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/textView6"
+        android:text="@string/humidity"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="154dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/sunset"
+        android:text="@string/sunset"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sunset"
+        android:layout_width="154dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_below="@+id/textView14"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/textView8"
+        android:text="@string/sunrise"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sunrise"
+        android:layout_width="154dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_below="@+id/textView8"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:text="@string/submit" />
+
+
+
+</RelativeLayout>
